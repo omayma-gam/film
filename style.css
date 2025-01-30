@@ -8,22 +8,31 @@ header{
     display: flex;
     justify-content: space-between;
 }
-
+.butto{
+    background-color: rgb(189, 28, 138);
+    cursor: pointer;
+    border:none;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 20%;
+}
 .button{
     background-color: rgb(189, 28, 138);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+    cursor: pointer;
     border: none;
-    width: 100px;
+    padding: 10px 10px;
+    margin: 0;
+}
+.om{
     margin-top: 1%;
     margin-bottom: 1%;
-    cursor: pointer;
-
 }
 .image{
     background-image: url('f92789ae-71df-45bc-8d5e-b84b49cb3e03.webp');
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 .re{
     display: flex;
@@ -37,7 +46,7 @@ header{
     border-radius: 10px;
     border: none;
     background-color: azure;
-    color: rgb(177, 205, 206);  
+    color: rgb(0, 0, 0);  
 }
 .image1{
     width:  260px;
@@ -51,4 +60,76 @@ footer{
     padding-left: 40%;
     padding-top: 1%;
     border-radius: 10%;
+}
+.par2{
+margin-right: 2%;
+}
+.principale{
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.ajt{
+    background-color: rgb(189, 28, 138);
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: black;
+    height: 20px;
+    width: 100px;
+}
+.partit{
+    background-color: azure;
+    border-radius: 15px;
+    color: azure;
+    height: 40px;
+    width: 500px;
+}
+.P{
+    height: 150px;
+    width: 500px;
+}
+.conan{
+    background-color:rgb(106,104,103);
+    margin-left: 5%;
+    border-radius: 10px;
+    height: 250px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+.image2{
+    border-radius: 10px;
+}
+.btn{
+    margin-left: 2%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+.det{
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.tout{
+    margin-top: 3%;
+    border-radius: 10px;
+    color: azure;
+    padding: 2%;
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.tous{
+   display: flex;
+   justify-content: space-evenly;
 }
