@@ -7,9 +7,7 @@
 }
 .btn{
     width: px;
-    height: 40px;
-
-  
+    height: 40px;  
 }
 header{
     display: flex;
@@ -17,6 +15,7 @@ header{
 }
 .button{
     background-color: rgb(189, 28, 138);
+    padding-right: 2%;
     color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -32,88 +31,27 @@ header{
     width: 150px;
  }
 
-.imagebtn{
-    width: 30px;
-    height: 30px;
-    align-items: center;
-}
+
 body{
-    background-color:rgba(30, 33, 41, 1);
+    background-color:rgb(10, 10, 10);
     height: 110vh;
 }
-footer{
-    background-color: rgba(0, 172, 193, 1);
-   margin-top: 200px;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
-.footer{
-    color: #ffffff;
-   display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    padding: 10px;
-    
-  
-}
 
-#li{
-    color:rgba(166, 162, 162, 1);
-    font-weight: 800;
-  
-   
-}
-.btn btn-warning{
-    width: 10%;
-}
-
-.section{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    padding-top: 50px;
-}
 
 #btn-ajouter{
     background-color: rgba(0, 172, 193, 1);
     
 }
-.form-label{
-    width: 500px;
-    color: azure;
-    
-
-}
-.text-center{
-    color: azure;
- font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-size: 50px;
-
-}
 .img-voirplus{
     width: 330px;
-   
 }
-
 .description-film{
     color: azure;
 }
 .film-name{
     color: azure;
 }
-.tout{
-    margin-top: 30px;
-}
-.actors{
-    color: azure;
 
-}
-#btn-voirplus{
-    color: azure;
-    background-color: rgba(0, 172, 193, 1);
-    
-}
 .col{
     color: azure;
     margin: 0px;

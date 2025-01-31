@@ -8,6 +8,16 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.form-label{
+    width: 500px;
+    color: azure;
+    
+
+}
+.btn{
+    width: px;
+    height: 40px;  
+}
 .butto{
     background-color: rgb(189, 28, 138);
     cursor: pointer;
@@ -50,9 +60,21 @@ header{
 }
 .image1{
     width:  260px;
-    height: 150px;
+    height:  300px;
     margin-top: 10%;
     margin-left: 3%;
+    border-radius: 12px;
+}
+.film{
+    color: white;
+    background-color: rgb(79, 65, 74);
+    padding-bottom: 40%;
+    width: 260px;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    flex-direction: column;
 }
 footer{
     background-color: bisque;
