@@ -40,7 +40,7 @@ body{
 
 #btn-ajouter{
     background-color: rgba(0, 172, 193, 1);
-    
+    border-radius: 10px;
 }
 .img-voirplus{
     width: 330px;

@@ -3,80 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajouter un Film</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img class="logo" src="Capture d'écran 2025-01-28 162553.png" alt="">
         <form class="om">
-            <a class="button" href="Acceuil.html" style="text-decoration: none;">Acceuil</a>
+            <a class="button" href="Acceuil.html" style="text-decoration: none;">Accueil</a>
             <a class="button" href="Ajouter.html" style="text-decoration: none;"> Ajouter</a>
         </form>    
     </header>
     <div class="principale" id="addRecipeForm">      
-    <div>
-        <p class="par">Titre :</p>
-        <input id="Titre" class="partit" style="color: black; border: none;">
-        <p class="par">Année :</p>
-        <input id="annee" class="partit" style="color:black; border: none;">
-        <p class="par">Statut :</p>
-        <input id="statut" class="partit" style="color: black; border: none;">
-        <button type="submit" id="submit" class="btn btn-outline-success" style="background-color: rgb(193, 0, 122); border-radius: 12px; border: none; padding-top: 2%; cursor: pointer; color: aliceblue;">Ajouter</button>
-    </div>
-    <div class="par2">
-        <p class="par">Réalisateur :</p>
-        <input id="réalisateur" class="partit" style="color: black; border: none;">
-        <p class="par">Image :</p>
-        <input id="image" class="partit" style="color: black; border: none;">
-        <p class="par">Description :</p>
-        <input id="description" class="partit P" style="color: black; border: none;">
-    </div>    
-    </div>
-    <div class="conan">
-        <img class="image2" src="anm.jpg" alt="">
-        <div class="btn">
-        <input class="button" type="button" value="Modifier">
-        <input class="button" type="button" value="Supprimer">
+        <div>
+            <p class="par">Titre :</p>
+            <input id="nom" class="partit" style="color: black; border: none;">
+            <p class="par">Année :</p>
+            <input id="annee" class="partit" style="color:black; border: none;">
+            <p class="par">Statut :</p>
+            <input id="genre" class="partit" style="color: black; border: none;">
+            <button type="submit" id="submit" class="btn btn-outline-success" style="background-color: rgb(193, 0, 122); border-radius: 12px; border: none; padding-top: 2%; cursor: pointer; color: aliceblue;">Ajouter</button>
         </div>
+        <div class="par2">
+            <p class="par">Réalisateur :</p>
+            <input id="realisateur" class="partit" style="color: black; border: none;">
+            <p class="par">Image :</p>
+            <input type="url"   id="image" class="partit" style="color: black; border: none;">
+            <p class="par">Description :</p>
+            <input id="description" class="partit P" style="color: black; border: none;">
+        </div>    
     </div>
-    <script>
-        // Initialiser le tableau des films à partir du stockage local s'il existe
-        let movies = JSON.parse(localStorage.getItem('movies')) || [];
 
-        function ajouterFilm(event) {   
-            event.preventDefault(); // Empêche le rechargement de la page
+    <div class="conan">
+     
+    </div>
 
-            // Récupérer les valeurs des champs d'entrée
-            const title = document.getElementById('Titre').value;
-            const annee = document.getElementById('annee').value;
-            const statut = document.getElementById('statut').value;
-            const realisateur = document.getElementById('réalisateur').value;
-            const image = document.getElementById('image').value;
-            const description = document.getElementById('description').value;
+    <div id="listmovie"></div>
 
-            // Créer un objet film
-            const film = {
-                title: title,
-                annee: annee,
-                statut: statut,
-                realisateur: realisateur,
-                image: image,
-                description: description
-            };
-
-            // Ajouter le film au tableau des films
-            movies.push(film);
-            
-            // Sauvegarder le tableau des films dans le stockage local
-            localStorage.setItem('movies', JSON.stringify(movies));
-
-            // Rediriger vers la page d'accueil
-            location.assign('Acceuil.html');
-        }
-
-        // Ajouter un écouteur d'événement au formulaire
-        document.getElementById('addRecipeForm').addEventListener('submit', ajouterFilm);
+    <script src="index.js">
+     
     </script>
 </body>
 </html>
